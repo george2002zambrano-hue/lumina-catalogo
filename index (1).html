@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LÚMINA | Moda & Accesorios — Demo comercial</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#172033;background:#f5f7fb}*{box-sizing:border-box}body{margin:0}header{background:linear-gradient(115deg,#142f60,#2760b0);color:white;padding:38px max(20px,calc((100vw - 1060px)/2))}header small{letter-spacing:.12em;text-transform:uppercase;color:#c5dcff}h1{margin:8px 0;font-size:clamp(28px,5vw,44px)}header p{color:#e0ecff;max-width:680px}.wrap{max-width:1100px;margin:auto;padding:25px 20px}.bar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}.bar input,.bar select{padding:13px;border:1px solid #d8dfec;border-radius:12px;background:white;font:inherit;flex:1;min-width:190px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.item{background:white;border:1px solid #e6eaf1;border-radius:16px;overflow:hidden;box-shadow:0 5px 18px #1d38600a}.art{height:150px;display:grid;place-items:center;font-size:65px;background:linear-gradient(135deg,#e6f0ff,#f4eaff)}.details{padding:18px}.tag{font-size:12px;color:#5273a2}.details h3{margin:7px 0}.price{font-size:22px;font-weight:750;color:#153f80}.details button,.primary{cursor:pointer;border:0;background:#205cb0;color:white;border-radius:10px;padding:11px 15px;font-weight:650}.details button{width:100%;margin-top:12px}.details button:hover,.primary:hover{background:#123f81}.cart{background:white;border:1px solid #e6eaf1;border-radius:16px;padding:20px;margin-top:26px}.cart h2{margin-top:0}.cart li{padding:7px 0}.cartline{display:flex;justify-content:space-between;gap:8px}.cartline button{border:0;background:none;color:#ba3444;cursor:pointer}.total{font-size:21px;font-weight:750;text-align:right}.actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}.actions button{cursor:pointer;padding:12px 16px;border-radius:10px;border:1px solid #d8dfec;background:white;font-weight:650}.actions .primary{background:#19865c;color:white;border:0}footer{text-align:center;color:#69758a;padding:25px;font-size:13px}.note{background:#fff8e9;border:1px solid #ffe5a9;padding:12px 15px;border-radius:10px;color:#75521a;margin:0 0 20px}#empty{color:#6d7686}@media(max-width:500px){header{padding:30px 20px}.wrap{padding:18px 12px}.art{height:120px}}
+
+.qty{display:inline-flex;align-items:center;gap:8px}.qty button{border:1px solid #d8dfec;border-radius:7px;background:#f1f5ff;color:#143c76;font-size:18px;min-width:34px;min-height:34px;cursor:pointer}.cartline{align-items:center;border-bottom:1px solid #eef1f6;padding:10px 0;flex-wrap:wrap}.cartline .remove{color:#a32939;background:transparent;border:0;cursor:pointer;padding:8px}.cartline .lineinfo{flex:1;min-width:140px}.cartline .lineinfo small{display:block;color:#64748b;margin-top:3px}.cartline .linecontrols{display:flex;gap:8px;align-items:center}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #80b4ff;outline-offset:2px}button:disabled{opacity:.5;cursor:not-allowed}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#18365f;color:#fff;border-radius:12px;padding:12px 20px;box-shadow:0 8px 30px #0003;z-index:20;max-width:90vw}.art img{width:100%;height:100%;object-fit:cover}.counter{color:#5a6a82;font-size:14px;margin:-7px 0 14px}.hint{color:#64748b;font-size:13px;margin:12px 0 0}@media(max-width:520px){.cartline{align-items:flex-start}.cartline .linecontrols{width:100%;justify-content:flex-end}.actions button{flex:1}.cart{padding:15px}}
+
+/* Identidad comercial LÚMINA */
+:root{font-family:Segoe UI,Arial,sans-serif;color:#262327;background:#faf7f4}
+header{background:linear-gradient(120deg,#251f2c 0%,#493747 65%,#74515b 100%);padding-top:70px;padding-bottom:75px;position:relative;overflow:hidden}
+header:after{content:'✦';position:absolute;right:8%;top:8%;font-size:220px;color:#ffffff0b;pointer-events:none}
+header small{color:#f6c8bd;letter-spacing:.22em}header h1{font-family:Georgia,serif;font-weight:400;letter-spacing:.05em;font-size:clamp(40px,7vw,70px)}header p{color:#f0e5e6;font-size:17px;line-height:1.65}
+.brandnav{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:auto;padding:20px;gap:15px}.brandnav strong{font-family:Georgia,serif;letter-spacing:.16em;font-size:23px}.brandnav a{color:#644756;text-decoration:none;font-size:14px;font-weight:700}.brandnav a:hover{text-decoration:underline}
+.wrap{max-width:1140px}.bar input,.bar select{border-color:#e5dcd9;border-radius:7px}.item{border:1px solid #ede5e0;border-radius:10px;box-shadow:0 7px 26px #442d2d0a;transition:transform .2s,box-shadow .2s}.item:hover{transform:translateY(-4px);box-shadow:0 12px 30px #442d2d18}.art{height:205px;background:linear-gradient(145deg,#f7e7df,#e5d8df);font-size:88px;position:relative}.item:nth-child(3n+2) .art{background:linear-gradient(145deg,#e9e3dc,#f7e9e2)}.item:nth-child(3n+3) .art{background:linear-gradient(145deg,#e2e5e4,#f6e7e4)}.details{padding:20px}.details h3{font-family:Georgia,serif;font-size:20px;font-weight:400}.tag{letter-spacing:.1em;text-transform:uppercase;color:#886573}.price{color:#593b4a}.details button,.primary{background:#563746;border-radius:7px}.details button:hover,.primary:hover{background:#3c2431}.cart{border-radius:10px;border-color:#eadfda}.actions .primary{background:#563746}.note{background:#fff5eb;border-color:#efd8c1;color:#6b4c3b}.toast{background:#563746}.qty button{background:#f7edf0;color:#563746;border-color:#e5d4db}.cart h2{font-family:Georgia,serif;font-weight:400}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#896977;font-weight:700}.sectionintro{display:flex;align-items:end;justify-content:space-between;gap:20px;margin:10px 0 20px}.sectionintro h2{font-family:Georgia,serif;font-weight:400;font-size:32px;margin:4px 0}.sectionintro p{font-size:14px;color:#756b70;margin:0 0 5px}.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}.trust div{background:#f4eeeb;padding:18px;border-radius:8px;text-align:center;font-size:13px;color:#654f58}.trust strong{display:block;font-size:18px;margin-bottom:5px}.banner{margin-top:24px;background:#efe3e3;padding:20px;border-radius:9px;color:#634754;text-align:center}.banner strong{font-family:Georgia,serif;font-size:22px;font-weight:400}.cart{scroll-margin-top:18px}footer{background:#29212a;color:#f5e9e9;margin-top:25px;padding:28px}.demo-label{display:inline-block;background:#f1d7c9;color:#57372f;padding:5px 10px;border-radius:30px;font-size:12px;font-weight:700}.skip{position:absolute;left:-9999px}.skip:focus{left:10px;top:10px;z-index:50;background:white;padding:10px}@media(max-width:600px){header{padding-top:48px;padding-bottom:48px}.art{height:170px}.trust{grid-template-columns:1fr}.sectionintro{display:block}.brandnav strong{font-size:19px}}
+
+/* Ajustes de publicación */
+.art{height:245px;background:#f2ebe7;overflow:hidden}.art img{object-fit:cover;object-position:center;padding:0;width:100%;height:100%;display:block}.democta{margin-top:36px;padding:30px;border-radius:12px;background:#f0e6e5;text-align:center;color:#503b46}.democta h2{font:normal clamp(22px,3vw,32px) Georgia,serif;margin:10px 0}.democta p{line-height:1.65}dialog{width:min(92vw,520px);border:1px solid #e9d8d9;border-radius:12px;padding:24px;box-shadow:0 20px 80px #0005;color:#352b32}dialog::backdrop{background:#1c121ab8}dialog h2{font:normal 26px Georgia,serif}dialog p{line-height:1.5}dialog textarea{width:100%;padding:12px;border:1px solid #d9c6cc;border-radius:8px;font:14px/1.5 Segoe UI,sans-serif;resize:vertical}dialog .close{float:right;background:#f5e9ec;border:0;padding:8px 12px;border-radius:7px;cursor:pointer}dialog .actions{margin-top:15px}dialog .actions button{background:#563746;color:#fff;border:0}button{touch-action:manipulation}@media(max-width:520px){.art{height:190px}.democta{padding:20px 14px}.brandnav{padding:16px}}
+.photo-credits{max-width:1140px;margin:28px auto;color:#665c61;font-size:13px}.photo-credits summary{cursor:pointer}.photo-credits a{color:#755061}
+</style>
+</head>
+<body>
+<a class="skip" href="#products">Saltar a productos</a>
+<nav class="brandnav" aria-label="Navegación"><strong>LÚMINA ✦</strong><a href="#pedido">Ver mi pedido 🛍️</a></nav>
+<header><small>COLECCIÓN ESENCIAL · DEMOSTRACIÓN</small><h1>LÚMINA</h1><p>Moda & accesorios para tu día a día.<br>Encuentra tu estilo, elige tus favoritos y prepara tu pedido fácilmente.</p><span class="demo-label">TIENDA FICTICIA · PORTAFOLIO</span></header>
+<main class="wrap">
+<p class="note"><strong>DEMO:</strong> LÚMINA es una marca ficticia; los productos, fotografías referenciales y precios son de demostración. Esta página no recibe pagos ni pedidos reales. Puedes probar cómo se prepara un pedido.</p>
+<div class="sectionintro"><div><span class="eyebrow">Nuestra selección</span><h2>Descubre la colección</h2></div><p>Precios de demostración en USD</p></div>
+<div class="bar"><input id="search" placeholder="Buscar productos..." aria-label="Buscar productos"><select id="category" aria-label="Filtrar por categoría"><option value="">Todas las categorías</option></select></div>
+<section id="products" class="grid" aria-label="Productos"></section>
+<div class="trust"><div><strong>✦</strong>Diseño adaptable a tu celular</div><div><strong>♡</strong>Selecciona tus favoritos</div><div><strong>✉</strong>Prepara el pedido por WhatsApp</div></div>
+<div class="banner"><strong>Tu estilo, a un mensaje de distancia.</strong><p>Explora, elige y consulta disponibilidad directamente con la tienda.</p></div>
+<section class="cart" id="pedido"><h2>🛍️ Mi pedido</h2><p class="counter" id="counter" aria-live="polite">0 artículos</p><ul id="cartItems"></ul><p id="empty">Todavía no has agregado productos.</p><p class="total" id="total">Total: $0.00</p><div class="actions"><button id="clear">Vaciar pedido</button><button id="send" class="primary">Preparar pedido de WhatsApp</button></div><p class="hint">Demostración ficticia: los productos no están a la venta. El botón de WhatsApp abre el contacto de pruebas del creador; no realices pagos.</p></section>
+<section class="democta" aria-label="Información comercial"><span class="eyebrow">¿Te gustaría una tienda como esta?</span><h2>Tu negocio también puede tener su catálogo digital</h2><p>Esta es una demostración de Catálogo Digital Express. Podemos adaptar colores, productos y WhatsApp para tu negocio.</p><p><strong>Servicio inicial desde $25</strong> · Hasta 10 productos · Una ronda de correcciones · Sujeto a cotización y disponibilidad.</p></section>
+<details class="photo-credits"><summary>Fotografías de referencia y créditos</summary><p>Fotografías gratuitas de Pexels, usadas para ilustrar una tienda ficticia. No representan inventario real ni modelos exactos de los artículos.</p><ol><li><a href="https://www.pexels.com/photo/close-up-of-a-beige-t-shirt-on-a-mannequin-7432217/" target="_blank" rel="noopener noreferrer">Fotografía 1 en Pexels</a></li><li><a href="https://www.pexels.com/photo/caps-on-display-16063768/" target="_blank" rel="noopener noreferrer">Fotografía 2 en Pexels</a></li><li><a href="https://www.pexels.com/photo/brown-leather-backpack-on-a-grassfield-3155047/" target="_blank" rel="noopener noreferrer">Fotografía 3 en Pexels</a></li><li><a href="https://www.pexels.com/photo/white-shoes-on-floor-7193634/" target="_blank" rel="noopener noreferrer">Fotografía 4 en Pexels</a></li><li><a href="https://www.pexels.com/photo/a-blazer-hanging-on-a-clothes-hanger-9218536/" target="_blank" rel="noopener noreferrer">Fotografía 5 en Pexels</a></li><li><a href="https://www.pexels.com/photo/brown-leather-sandals-26965811/" target="_blank" rel="noopener noreferrer">Fotografía 6 en Pexels</a></li></ol></details></main><dialog id="pedidoDialog" aria-labelledby="dlgTitle"><form method="dialog"><button class="close" aria-label="Cerrar ventana">✕</button></form><h2 id="dlgTitle">Vista previa del pedido</h2><p>LÚMINA es una tienda ficticia. Este mensaje se enviará al número de pruebas del creador, no a una tienda real. No realices pagos.</p><textarea id="mensajePedido" rows="9" readonly aria-label="Mensaje de pedido"></textarea><div class="actions"><button id="copy" type="button">Copiar mensaje</button><button id="openWA" class="primary" type="button" hidden>Abrir WhatsApp</button></div></dialog><div id="toast" class="toast" role="status" aria-live="polite" hidden></div><footer>LÚMINA · Tienda ficticia de demostración · Creado con Catálogo Digital Express</footer>
+<script>
+// DEMOSTRACIÓN: escribe el número comercial con código de país, sin + ni espacios.
+const WHATSAPP_NEGOCIO = '593967554914'; // Para clientes reales: código de país y número autorizado, sin + ni espacios.
+const productos = [
+ {id:1,nombre:'Camiseta Aura',categoria:'Ropa',precio:14.90,icono:'👕',imagen:'https://images.pexels.com/photos/7432217/pexels-photo-7432217.jpeg?auto=compress&cs=tinysrgb&w=800',respaldo:'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20270%20270%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22b%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23f4e8e1%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ded0d0%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22270%22%20height%3D%22270%22%20fill%3D%22url%28%23b%29%22%2F%3E%3Ccircle%20cx%3D%22137%22%20cy%3D%22137%22%20r%3D%22109%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.22%22%2F%3E%3Cpath%20d%3D%22M95%2055%20131%2037%20163%2055%20193%2076%20176%20112%20153%20100%20153%20234%20106%20234%20106%20100%2083%20112%2065%2076Z%22%20fill%3D%22%23f7eee7%22%20stroke%3D%22%23a47e75%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20d%3D%22M113%2045q16%2022%2034%200%22%20fill%3D%22none%22%20stroke%3D%22%23b8948a%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20d%3D%22M115%20112h31%22%20stroke%3D%22%23d5b8ac%22%20stroke-width%3D%223%22%2F%3E%3C%2Fsvg%3E'},
+ {id:2,nombre:'Gorra Nova',categoria:'Accesorios',precio:11.50,icono:'🧢',imagen:'https://images.pexels.com/photos/16063768/pexels-photo-16063768.jpeg?auto=compress&cs=tinysrgb&w=800',respaldo:'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20270%20270%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22b%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23f4e8e1%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ded0d0%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22270%22%20height%3D%22270%22%20fill%3D%22url%28%23b%29%22%2F%3E%3Ccircle%20cx%3D%22137%22%20cy%3D%22137%22%20r%3D%22109%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.22%22%2F%3E%3Cpath%20d%3D%22M72%20134q7-76%2064-76%2057%200%2061%2076%22%20fill%3D%22%23a28a76%22%20stroke%3D%22%2366594e%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20d%3D%22M62%20135q77-26%20146%200%203%2017-18%2022-75%2013-130-6Z%22%20fill%3D%22%23c1a48e%22%20stroke%3D%22%2366594e%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20d%3D%22M135%2061v68%22%20stroke%3D%22%23cbb4a3%22%20stroke-width%3D%223%22%2F%3E%3C%2Fsvg%3E'},
+ {id:3,nombre:'Mochila Siena',categoria:'Accesorios',precio:27.00,icono:'🎒',imagen:'https://images.pexels.com/photos/3155047/pexels-photo-3155047.jpeg?auto=compress&cs=tinysrgb&w=800',respaldo:'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20270%20270%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22b%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23f4e8e1%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ded0d0%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22270%22%20height%3D%22270%22%20fill%3D%22url%28%23b%29%22%2F%3E%3Ccircle%20cx%3D%22137%22%20cy%3D%22137%22%20r%3D%22109%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.22%22%2F%3E%3Crect%20x%3D%2275%22%20y%3D%2279%22%20width%3D%22121%22%20height%3D%22153%22%20rx%3D%2229%22%20fill%3D%22%23a17c78%22%20stroke%3D%22%236c5055%22%20stroke-width%3D%225%22%2F%3E%3Cpath%20d%3D%22M101%2084V67q0-34%2035-34t35%2034v17%22%20fill%3D%22none%22%20stroke%3D%22%236c5055%22%20stroke-width%3D%2212%22%2F%3E%3Crect%20x%3D%2293%22%20y%3D%22137%22%20width%3D%2285%22%20height%3D%2265%22%20rx%3D%2212%22%20fill%3D%22%23c7a9a2%22%20stroke%3D%22%23795a59%22%20stroke-width%3D%223%22%2F%3E%3Cpath%20d%3D%22M136%20139v60%22%20stroke%3D%22%23a78680%22%20stroke-width%3D%223%22%2F%3E%3C%2Fsvg%3E'},
+ {id:4,nombre:'Zapatillas Urban',categoria:'Calzado',precio:39.00,icono:'👟',imagen:'https://images.pexels.com/photos/7193634/pexels-photo-7193634.jpeg?auto=compress&cs=tinysrgb&w=800',respaldo:'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20270%20270%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22b%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23f4e8e1%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ded0d0%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22270%22%20height%3D%22270%22%20fill%3D%22url%28%23b%29%22%2F%3E%3Ccircle%20cx%3D%22137%22%20cy%3D%22137%22%20r%3D%22109%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.22%22%2F%3E%3Cpath%20d%3D%22M50%20165q25%208%2057-27l21-41%2034%2026%209%2026%2042%2022q15%209%2012%2030H52q-14-17-2-36Z%22%20fill%3D%22%23eee4dc%22%20stroke%3D%22%23847a75%22%20stroke-width%3D%225%22%2F%3E%3Cpath%20d%3D%22M48%20195h178v19H52q-10-5-4-19Z%22%20fill%3D%22%23b7a7a0%22%2F%3E%3Cpath%20d%3D%22m126%20132%2029%2020m-39-8%2029%2020%22%20stroke%3D%22%23a58b83%22%20stroke-width%3D%224%22%2F%3E%3C%2Fsvg%3E'},
+ {id:5,nombre:'Chaqueta Alba',categoria:'Ropa',precio:34.90,icono:'🧥',imagen:'https://images.pexels.com/photos/9218536/pexels-photo-9218536.jpeg?auto=compress&cs=tinysrgb&w=800',respaldo:'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20270%20270%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22b%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23f4e8e1%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ded0d0%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22270%22%20height%3D%22270%22%20fill%3D%22url%28%23b%29%22%2F%3E%3Ccircle%20cx%3D%22137%22%20cy%3D%22137%22%20r%3D%22109%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.22%22%2F%3E%3Cpath%20d%3D%22M92%2052%20126%2034%20162%2052%20202%2082%20181%20124%20162%20111%20165%20233H91l2-122-19%2013-21-42Z%22%20fill%3D%22%23b49a93%22%20stroke%3D%22%23745e60%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20d%3D%22M126%2034v199m-22-185%2022%2040%2022-40%22%20stroke%3D%22%23e2d0c8%22%20stroke-width%3D%224%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M99%20149h21m15%200h22%22%20stroke%3D%22%23745e60%22%20stroke-width%3D%224%22%2F%3E%3C%2Fsvg%3E'},
+ {id:6,nombre:'Sandalias Sol',categoria:'Calzado',precio:18.00,icono:'🩴',imagen:'https://images.pexels.com/photos/26965811/pexels-photo-26965811.jpeg?auto=compress&cs=tinysrgb&w=800',respaldo:'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20270%20270%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22b%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23f4e8e1%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ded0d0%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22270%22%20height%3D%22270%22%20fill%3D%22url%28%23b%29%22%2F%3E%3Ccircle%20cx%3D%22137%22%20cy%3D%22137%22%20r%3D%22109%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.22%22%2F%3E%3Cpath%20d%3D%22M61%20166q16-25%2042-30l31%2022%2022-45%2018%204%207%2055%2040%2021q9%2022-17%2026H77q-36-3-16-53Z%22%20fill%3D%22%23c99d82%22%20stroke%3D%22%23846958%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20d%3D%22M91%20140q35%2017%2059%2049m15-62q-24%2021-25%2051%22%20stroke%3D%22%239a755e%22%20stroke-width%3D%228%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M64%20207h147%22%20stroke%3D%22%23f1d8bd%22%20stroke-width%3D%225%22%2F%3E%3C%2Fsvg%3E'}
+];
+const CLAVE_CARRITO = 'lumina_demo_comercial_v1';
+const carrito = new Map();
+const $ = id => document.getElementById(id);
+const dinero = n => '$' + n.toFixed(2);
+let avisoTimeout;
+function avisar(mensaje){
+ const e=$('toast');e.textContent=mensaje;e.hidden=false;
+ clearTimeout(avisoTimeout);avisoTimeout=setTimeout(()=>e.hidden=true,2300);
+}
+function guardar(){
+ try{localStorage.setItem(CLAVE_CARRITO,JSON.stringify([...carrito]));}
+ catch(e){console.warn('No se pudo guardar el pedido en este navegador.',e);}
+}
+function recuperar(){
+ try{
+  const datos=JSON.parse(localStorage.getItem(CLAVE_CARRITO)||'[]');
+  if(!Array.isArray(datos))return;
+  for(const entrada of datos){
+   if(!Array.isArray(entrada)||entrada.length!==2)continue;
+   const [id,n]=entrada;
+   if(productos.some(p=>p.id===id)&&Number.isSafeInteger(n)&&n>0&&n<=999)carrito.set(id,n);
+  }
+ }catch(e){console.warn('No se pudo recuperar el pedido.',e);}
+}
+function cambiarCantidad(id,cambio){
+ const n=(carrito.get(id)||0)+cambio;
+ if(n<=0)carrito.delete(id);
+ else if(n<=999)carrito.set(id,n);
+ else {avisar('Máximo 999 unidades por producto.');return;}
+ mostrarCarrito();
+ if(cambio>0)avisar('Producto agregado al pedido.');
+}
+[...new Set(productos.map(p=>p.categoria))].forEach(c=>{
+ const o=document.createElement('option');o.value=c;o.textContent=c;$('category').append(o);
+});
+function mostrarProductos(){
+ const q=$('search').value.trim().toLocaleLowerCase('es');
+ const c=$('category').value;
+ const visibles=productos.filter(p=>(!c||p.categoria===c)&&p.nombre.toLocaleLowerCase('es').includes(q));
+ $('products').replaceChildren();
+ visibles.forEach(p=>{
+  const card=document.createElement('article');card.className='item';
+  const art=document.createElement('div');art.className='art';
+  if(p.imagen){const img=document.createElement('img');img.src=p.imagen;img.alt=p.nombre;img.loading='lazy';img.decoding='async';img.onerror=()=>{img.onerror=null;img.src=p.respaldo;img.style.objectFit='contain';img.style.padding='14px'};art.append(img)}
+  else art.textContent=p.icono;
+  const d=document.createElement('div');d.className='details';
+  const tag=document.createElement('div');tag.className='tag';tag.textContent=p.categoria;
+  const h=document.createElement('h3');h.textContent=p.nombre;
+  const price=document.createElement('div');price.className='price';price.textContent=dinero(p.precio);
+  const btn=document.createElement('button');btn.textContent='Agregar al pedido';
+  btn.addEventListener('click',()=>cambiarCantidad(p.id,1));
+  d.append(tag,h,price,btn);card.append(art,d);$('products').append(card);
+ });
+ if(!visibles.length){const msg=document.createElement('p');msg.textContent='No encontramos productos con ese filtro.';$('products').append(msg);}
+}
+function mostrarCarrito(){
+ $('cartItems').replaceChildren();let total=0,unidades=0;
+ carrito.forEach((cantidad,id)=>{
+  const p=productos.find(x=>x.id===id);if(!p)return;
+  total+=p.precio*cantidad;unidades+=cantidad;
+  const li=document.createElement('li');li.className='cartline';
+  const info=document.createElement('span');info.className='lineinfo';
+  info.textContent=p.nombre;
+  const detalle=document.createElement('small');detalle.textContent=dinero(p.precio*cantidad);
+  info.append(detalle);
+  const controls=document.createElement('span');controls.className='linecontrols';
+  const qty=document.createElement('span');qty.className='qty';
+  const menos=document.createElement('button');menos.textContent='−';menos.setAttribute('aria-label','Restar una unidad de '+p.nombre);
+  menos.addEventListener('click',()=>cambiarCantidad(id,-1));
+  const numero=document.createElement('strong');numero.textContent=cantidad;
+  const mas=document.createElement('button');mas.textContent='+';mas.setAttribute('aria-label','Agregar una unidad de '+p.nombre);
+  mas.addEventListener('click',()=>cambiarCantidad(id,1));
+  qty.append(menos,numero,mas);
+  const quitar=document.createElement('button');quitar.className='remove';quitar.textContent='Quitar';
+  quitar.setAttribute('aria-label','Quitar '+p.nombre+' del pedido');
+  quitar.addEventListener('click',()=>{carrito.delete(id);mostrarCarrito();});
+  controls.append(qty,quitar);li.append(info,controls);$('cartItems').append(li);
+ });
+ $('empty').hidden=carrito.size>0;
+ $('counter').textContent=unidades+' '+(unidades===1?'artículo':'artículos');
+ $('total').textContent='Total: '+dinero(total);
+ $('clear').disabled=carrito.size===0;
+ $('send').disabled=carrito.size===0;
+ guardar();
+}
+$('search').addEventListener('input',mostrarProductos);
+$('category').addEventListener('change',mostrarProductos);
+$('clear').addEventListener('click',()=>{
+ if(carrito.size && confirm('¿Seguro que deseas vaciar todo el pedido?')){
+  carrito.clear();mostrarCarrito();avisar('Pedido vaciado.');
+ }
+});
+function crearMensaje(){
+ let total=0;const lineas=['Hola, estoy probando el catálogo de demostración LÚMINA. Este no es un pedido real:',''];
+ carrito.forEach((n,id)=>{const p=productos.find(x=>x.id===id);if(!p)return;
+ total+=n*p.precio;lineas.push(`• ${p.nombre} x${n}: ${dinero(p.precio*n)}`);
+ });
+ lineas.push('',`Total referencial: ${dinero(total)}`,'Mensaje de prueba: no realizar pagos ni preparar envíos.');
+ return lineas.join('\n');
+}
+$('send').addEventListener('click',()=>{
+ if(!carrito.size){avisar('Agrega al menos un producto.');return;}
+ $('mensajePedido').value=crearMensaje();
+ const activo=/^\d{8,15}$/.test(WHATSAPP_NEGOCIO);
+ $('openWA').hidden=!activo;
+ if(activo){$('openWA').textContent='Abrir WhatsApp de pruebas';}
+ const dlg=$('pedidoDialog');if(typeof dlg.showModal==='function')dlg.showModal();else {alert($('mensajePedido').value);}
+});
+$('copy').addEventListener('click',async()=>{
+ const texto=$('mensajePedido').value;
+ try{await navigator.clipboard.writeText(texto);avisar('Mensaje copiado.');}
+ catch(e){$('mensajePedido').focus();$('mensajePedido').select();avisar('Selecciona y copia el mensaje.');}
+});
+$('openWA').addEventListener('click',()=>{
+ if(!/^\d{8,15}$/.test(WHATSAPP_NEGOCIO))return;
+ window.open('https://wa.me/'+WHATSAPP_NEGOCIO+'?text='+encodeURIComponent(crearMensaje()),'_blank','noopener,noreferrer');
+});
+
+recuperar();mostrarProductos();mostrarCarrito();
+</script>
+</body></html>
